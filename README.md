@@ -1,7 +1,7 @@
 Untiming
 ========
 
-A fully automatic time tracker with python that logs the title of focued windows.
+A fully automatic time tracker with python that logs the title of focused windows.
 
 Untiming can log the title of the applications that you've been working on and provide you with query based reports (in text and bar charts). Some applications put active tab names in their titles too (like browsers, eclipse, ...) so you can even query Untiming for information about the tabs (e.g. How many hours did I spend in GMail today?).
 
