@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Untiming by auxiliary</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Untiming</h1>
+        <p class="header">A fully automatic time tracker with python</p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/auxiliary/untiming/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/auxiliary/untiming/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/auxiliary/untiming">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/auxiliary">auxiliary</a></p>
+
+
+      </header>
+      <section>
+        <h1>
+<a id="untiming" class="anchor" href="#untiming" aria-hidden="true"><span class="octicon octicon-link"></span></a>Untiming</h1>
+
+<p>A fully automatic time tracker with python that logs the title of focused windows.</p>
+
+<p>Untiming can log the title of the applications that you've been working on and provide you with query based reports (in text and bar charts). Some applications put active tab names in their titles too (like browsers, eclipse, ...) so you can even query Untiming for information about the tabs (e.g. How many hours did I spend in GMail today?).</p>
+
+<p>Note: Untiming automatically detects when you are not using your system (idle time) with the help of <strong>xprintidle</strong>.</p>
+
+<h2>
+<a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span class="octicon octicon-link"></span></a>Requirements</h2>
+
+<ol>
+<li>python-wnck</li>
+<li>xprintidle</li>
+</ol>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>Just run it with python:</p>
+
+<pre><code>python untiming.py
+</code></pre>
+
+<p>To get a report run:</p>
+
+<pre><code>python untiming.py report &lt;list of keywords&gt;
+</code></pre>
+
+<p>For example this will give you the usage reports for the gmail tab in your browser, eclipse and firefox:</p>
+
+<pre><code>python untiming.py report firefox eclipse gmail
+</code></pre>
+
+<p>To generate this month's chart run (an HTML chart will be generated with the name of <strong>untiming_report.html</strong>):</p>
+
+<pre><code>python untiming.py graph &lt;list of keywords&gt;
+</code></pre>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
+  </body>
+</html>
