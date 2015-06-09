@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/python
 
 """
     Untiming ver 0.1 - An automatic time tracker
@@ -21,10 +21,10 @@
 import os
 import gtk
 import sys
-import wnck
 import glib
 import datetime
 import logging
+import wnck
 
 script_path = os.path.realpath(__file__)
 os.chdir(script_path[:script_path.rfind("/")])

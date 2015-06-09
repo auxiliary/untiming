@@ -9,7 +9,7 @@ Note: Untiming automatically detects when you are not using your system (idle ti
 
 Requirements
 ------------
-1. A Linux distro
+1. python-wnck
 1. xprintidle
 
 Usage
